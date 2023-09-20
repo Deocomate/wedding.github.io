@@ -2,7 +2,7 @@ import os
 import json
 
 # Đường dẫn đến thư mục wedding
-folder_path = 'wedding'
+folder_path = 'weddingNen'
 
 # Kiểm tra xem folder tồn tại hay không
 if not os.path.exists(folder_path):
