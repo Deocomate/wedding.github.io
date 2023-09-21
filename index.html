@@ -476,13 +476,6 @@
     <section id="rsvp">
         <div class="container">
             <div class="row align-items-center gx-lg-5 justify-content-center">
-                <div class="col-md-8 col-lg-5 mb-5 mb-lg-0">
-                    <div class="img-clip-path position-relative">
-                        <img src="weddingNen/qr.jpg" alt class="img-fluid">
-                    </div>
-
-                </div>
-
                 <div class="col-lg-7">
                     <div class="mb-5 text-center">
                         <h2 class="font-alt fs-3 fw-bold text-uppercase">Hãy đến chung vui cùng chúng tôi</h2>
@@ -491,12 +484,12 @@
                         <span class="section-divider divider-primary"></span>
                     </div>
 
-                    <form action="https://demo.lucky-roo.com/dahlia-v1.0/rsvp.php" method="post">
+                    <form action="https://sheetdb.io/api/v1/vopnvh0yykupf" method="post" id="sheetdb-form">
                         <div class="row mb-3 mb-lg-4">
                             <div class="12">
                                 <label for="rsvp-message" class="d-block font-alt fw-bold mb-2 text-uppercase">Gửi lời
                                     chúc cho chúng tớ nhé:</label>
-                                <textarea name="rsvp_message" id="rsvp-message"
+                                <textarea name="data[message]" id="rsvp-message"
                                     class="border border-2 font-alt p-2 rounded text-muted w-100" rows="6"
                                     placeholder="..."></textarea>
                             </div>
@@ -513,7 +506,12 @@
 
                     </form>
                 </div>
+                <div class="col-md-8 col-lg-5 mb-5 mb-lg-0">
+                    <div class="img-clip-path position-relative">
+                        <img src="weddingNen/qr.jpg" alt class="img-fluid">
+                    </div>
 
+                </div>
             </div>
 
         </div>
@@ -528,7 +526,7 @@
                     <h2 class="font-alt fs-3 fw-bold text-uppercase text-light">Rất hân hạnh được đón tiếp!</h2>
                     <p class="font-alt fs-5 fst-italic text-light">Thứ 7, 23 tháng 9 năm 2023 | 1 Ngõ 119 Nguyễn Viết
                         Xuân,
-                        Lương Khánh Thiện, Phủ Lý, Hà Nam</p>
+                        Hai Bà Trưng, Phủ Lý, Hà Nam</p>
                     <img width="100" src="img/ornament-divider.png" alt class="d-block mx-auto">
                 </div>
 
@@ -543,9 +541,23 @@
 
     <script src="js/script.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script>
-
+        var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("sheetdb-form")),
+            }).then(
+                response => response.json()
+            ).then((html) => {
+                alert("Cảm ơn bạn đã gửi lời chúc cho chúng mình ^^")
+            });
+        });
     </script>
+    <!-- <script src="js/jq.js"></script> -->
 </body>
 
 <!-- Mirrored from demo.lucky-roo.com/dahlia-v1.0/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Sep 2023 17:08:32 GMT -->
