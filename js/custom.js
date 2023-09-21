@@ -1,53 +1,23 @@
 let data = [{
-        "fileName": "02---copy_optimized.jpg"
-    },
-    {
-        "fileName": "02_optimized.jpg"
-    },
-    {
         "fileName": "1_optimized.jpg"
-    },
-    {
-        "fileName": "3_optimized.jpg"
-    },
-    {
-        "fileName": "4_optimized.jpg"
-    },
-    {
-        "fileName": "ap1_optimized.jpg"
-    },
-    {
-        "fileName": "ap2_optimized.jpg"
-    },
-    {
-        "fileName": "ap3_optimized.jpg"
-    },
-    {
-        "fileName": "ap4_optimized.jpg"
     },
     {
         "fileName": "azp00887_optimized.jpg"
     },
     {
-        "fileName": "azp00895_optimized.jpg"
-    },
-    {
-        "fileName": "azp00900_optimized.jpg"
-    },
-    {
-        "fileName": "azp00915_optimized.jpg"
-    },
-    {
         "fileName": "azp00918_optimized (1).jpg"
     },
     {
-        "fileName": "azp00918_optimized.jpg"
+        "fileName": "azp00984---copy_optimized.jpg"
     },
     {
-        "fileName": "azp00942_optimized.jpg"
+        "fileName": "azp00981_optimized.jpg"
     },
     {
-        "fileName": "azp00948_optimized.jpg"
+        "fileName": "azp01122_optimized (1).jpg"
+    },
+    {
+        "fileName": "azp00969_optimized.jpg"
     },
     {
         "fileName": "azp00955_optimized.jpg"
@@ -56,106 +26,7 @@ let data = [{
         "fileName": "azp00960_optimized.jpg"
     },
     {
-        "fileName": "azp00963_optimized.jpg"
-    },
-    {
-        "fileName": "azp00966_optimized (1).jpg"
-    },
-    {
-        "fileName": "azp00966_optimized.jpg"
-    },
-    {
-        "fileName": "azp00969_optimized.jpg"
-    },
-    {
         "fileName": "azp00971_optimized.jpg"
-    },
-    {
-        "fileName": "azp00976_optimized.jpg"
-    },
-    {
-        "fileName": "azp00981_optimized.jpg"
-    },
-    {
-        "fileName": "azp00984---copy_optimized.jpg"
-    },
-    {
-        "fileName": "azp00984_optimized.jpg"
-    },
-    {
-        "fileName": "azp01007_optimized.jpg"
-    },
-    {
-        "fileName": "azp01012_optimized.jpg"
-    },
-    {
-        "fileName": "azp01026_optimized.jpg"
-    },
-    {
-        "fileName": "azp01027_optimized.jpg"
-    },
-    {
-        "fileName": "azp01028_optimized.jpg"
-    },
-    {
-        "fileName": "azp01033_optimized.jpg"
-    },
-    {
-        "fileName": "azp01039_optimized.jpg"
-    },
-    {
-        "fileName": "azp01044_optimized.jpg"
-    },
-    {
-        "fileName": "azp01053_optimized.jpg"
-    },
-    {
-        "fileName": "azp01057_optimized.jpg"
-    },
-    {
-        "fileName": "azp01058_optimized.jpg"
-    },
-    {
-        "fileName": "azp01063_optimized (1).jpg"
-    },
-    {
-        "fileName": "azp01063_optimized.jpg"
-    },
-    {
-        "fileName": "azp01072_optimized.jpg"
-    },
-    {
-        "fileName": "azp01085_optimized.jpg"
-    },
-    {
-        "fileName": "azp01096_optimized.jpg"
-    },
-    {
-        "fileName": "azp01104_optimized.jpg"
-    },
-    {
-        "fileName": "azp01105_optimized.jpg"
-    },
-    {
-        "fileName": "azp01113_optimized.jpg"
-    },
-    {
-        "fileName": "azp01120_optimized.jpg"
-    },
-    {
-        "fileName": "azp01122_optimized (1).jpg"
-    },
-    {
-        "fileName": "azp01122_optimized.jpg"
-    },
-    {
-        "fileName": "azp01130_optimized.jpg"
-    },
-    {
-        "fileName": "azp01141_optimized.jpg"
-    },
-    {
-        "fileName": "thah0042_optimized.jpg"
     }
 ]
 
@@ -167,8 +38,8 @@ data.forEach(item => {
     <div class="item">
         <figure>
             <div class="gallery-img">
-                <a href="wedding/${item.fileName}" data-gall="photos">
-                    <img src="wedding/${item.fileName}" alt>
+                <a href="weddingNen/${item.fileName}" data-gall="photos">
+                    <img src="weddingNen/${item.fileName}" alt>
                 </a>
             </div>
         </figure>
